@@ -78,7 +78,7 @@ const BlogPage: React.FC = () => {
             Recomendaciones
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Example Recommendation */}
+            {/* Recomendación: El poder del ahora */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-slate-800 mb-4">
                 Libro: "El poder del ahora" de Eckhart Tolle
@@ -87,7 +87,23 @@ const BlogPage: React.FC = () => {
                 Una guía práctica para vivir en el presente y encontrar la paz interior.
               </p>
               <a
-                href="#"
+                href="/recommendations/el-poder-del-ahora"
+                className="text-blue-600 hover:underline font-medium"
+              >
+                Más información
+              </a>
+            </div>
+
+            {/* Recomendación: Una teoría general del amor */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-slate-800 mb-4">
+                Libro: "Una teoría general del amor" de Thomas Lewis, Fari Amini y Richard Lannon
+              </h3>
+              <p className="text-slate-600 mb-4">
+                Un libro que explora el amor y la conexión humana desde la neurociencia y la psicología, ideal para quienes buscan comprender el impacto de las relaciones en la salud emocional.
+              </p>
+              <a
+                href="/recommendations/una-teoria-general-del-amor"
                 className="text-blue-600 hover:underline font-medium"
               >
                 Más información

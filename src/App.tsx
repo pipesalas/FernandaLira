@@ -10,6 +10,9 @@ import BlogPage from './pages/BlogPage';
 import AnsiedadDiaADia from './blog/ansiedad-dia-a-dia';
 import DiversidadLGTBQI from './blog/diversidad-lgtbqi';
 import ColoresEstadosMentales from './blog/colores-estados-mentales';
+
+import ElPoderDelAhora from './recommendations/el-poder-del-ahora';
+import UnaTeoriaGeneralDelAmor from './recommendations/una-teoria-general-del-amor';
 import ScrollToTop from './components/ScrollToTop';
 import './styles/animations.css';
 
@@ -29,6 +32,8 @@ function App() {
             <Route path="/blog/ansiedad-dia-a-dia" element={<AnsiedadDiaADia />} />
             <Route path="/blog/diversidad-lgtbqi" element={<DiversidadLGTBQI />} />
             <Route path="/blog/colores-estados-mentales" element={<ColoresEstadosMentales />} />
+            <Route path="/recommendations/el-poder-del-ahora" element={<ElPoderDelAhora />} />
+            <Route path="/recommendations/una-teoria-general-del-amor" element={<UnaTeoriaGeneralDelAmor />} />
           </Routes>
         </main>
         <Footer />
