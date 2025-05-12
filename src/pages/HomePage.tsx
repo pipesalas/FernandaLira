@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
                   <img
-                    src="https://github.com/pipesalas/FernandaLira/blob/main/src/profile.png?raw=true"
+                    src="/profile.png"
                     alt="Fernanda Lira"
                     className="w-full h-full object-cover"
                   />
