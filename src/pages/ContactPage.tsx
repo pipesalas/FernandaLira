@@ -5,35 +5,66 @@ import ContactForm from '../components/ContactForm';
 const ContactPage: React.FC = () => {
   return (
     <>
-      {/* Header Section */}
+      {/* Sección de Encabezado */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-playfair font-bold text-slate-800 mb-6">
-              Contact Me
+              Contáctame
             </h1>
             <p className="text-lg text-slate-600 mb-8">
-              Feel free to reach out. I'll get back to you as soon as possible.
+              No dudes en comunicarte. Te responderé lo antes posible.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Sección de Contacto */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-2xl font-playfair font-semibold text-slate-800 mb-6">
-                Get in Touch
+                Ponte en contacto
               </h2>
               <p className="text-slate-600 mb-8">
-                Whether you're ready to schedule an appointment or just have questions
-                about my services, I'm here to help. Fill out the form, and I'll
-                respond as soon as possible.
+                Ya sea que quieras agendar una cita o tengas preguntas sobre mis servicios, estoy aquí para ayudarte. Completa el formulario y te responderé lo antes posible.
               </p>
 
               <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                      {/* Icono de Doctoralia (cruz médica, azul) */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-blue-600"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v8M8 12h8" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-medium text-slate-800">Reserva</h3>
+                    <a
+                      href="https://www.doctoralia.cl/fernanda-lira/psicologo/valdivia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-700 underline hover:text-blue-900 transition-colors duration-200"
+                    >
+                      Reserva a través de doctoralia
+                    </a>
+                  </div>
+                </div>
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
@@ -41,10 +72,10 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-800">Phone</h3>
-                    <p className="text-slate-600">(555) 123-4567</p>
+                    <h3 className="text-lg font-medium text-slate-800">Teléfono</h3>
+                    <p className="text-slate-600">+569 98250120</p>
                     <p className="text-sm text-slate-500 mt-1">
-                      Monday - Friday, 9am - 6pm
+                      De preferencia usar whatsapp
                     </p>
                   </div>
                 </div>
@@ -56,10 +87,10 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-800">Email</h3>
-                    <p className="text-slate-600">sarah.parker@example.com</p>
+                    <h3 className="text-lg font-medium text-slate-800">Correo electrónico</h3>
+                    <p className="text-slate-600">fernandailirae@gmail.com</p>
                     <p className="text-sm text-slate-500 mt-1">
-                      I respond to emails within 24-48 hours
+                      Respondo los correos en 24-48 horas
                     </p>
                   </div>
                 </div>
@@ -71,14 +102,11 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-800">Office Location</h3>
+                    <h3 className="text-lg font-medium text-slate-800">Ubicación</h3>
                     <p className="text-slate-600">
-                      123 Wellness Street, Suite 101
+                      Caupolicán 109
                       <br />
-                      San Francisco, CA 94107
-                    </p>
-                    <p className="text-sm text-slate-500 mt-1">
-                      Near public transportation
+                      Valdivia
                     </p>
                   </div>
                 </div>
@@ -90,11 +118,10 @@ const ContactPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-800">Office Hours</h3>
+                    <h3 className="text-lg font-medium text-slate-800">Horario de atención</h3>
                     <div className="text-slate-600">
-                      <p>Monday - Friday: 9am - 6pm</p>
-                      <p>Saturday: 10am - 2pm</p>
-                      <p>Sunday: Closed</p>
+                      <p>Lunes - Miércoles: 10:00 - 20:00</p>
+                      <p>Martes - Jueves: 13:00 - 18:00</p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +130,7 @@ const ContactPage: React.FC = () => {
 
             <div>
               <h2 className="text-2xl font-playfair font-semibold text-slate-800 mb-6">
-                Send a Message
+                Enviar un mensaje
               </h2>
               <ContactForm />
             </div>
@@ -111,25 +138,25 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Sección de Mapa */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-playfair font-semibold text-slate-800 mb-6 text-center">
-              Office Location
+              Ubicación
             </h2>
             <div className="rounded-lg overflow-hidden shadow-sm h-96 bg-white">
-              {/* Replace with actual map integration if needed */}
-              <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <MapPin size={48} className="text-slate-400 mb-4 mx-auto" />
-                  <p className="text-slate-600 max-w-md">
-                    123 Wellness Street, Suite 101
-                    <br />
-                    San Francisco, CA 94107
-                  </p>
-                </div>
-              </div>
+              {/* Integración de mapa real usando iframe de Google Maps */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1234567890123!2d-73.2456789012345!3d-39.81912345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sCaupolic%C3%A1n%20109%2C%20Valdivia!5e0!3m2!1ses!2scl!4v1681234567890!5m2!1ses!2scl"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa de ubicación"
+              ></iframe>
             </div>
           </div>
         </div>

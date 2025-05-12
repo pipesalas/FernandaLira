@@ -39,25 +39,25 @@ const Header: React.FC = () => {
             to="/"
             className="text-2xl font-playfair font-bold text-slate-800 tracking-tight"
           >
-            Dr. Sarah Parker
+            Fernanda Lira
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link to="/" className={linkClass('/')}>
-              Home
+              Inicio
             </Link>
             <Link to="/about" className={linkClass('/about')}>
-              About
+              Sobre mí
             </Link>
             <Link to="/services" className={linkClass('/services')}>
-              Services
+              Servicios
             </Link>
             <Link
               to="/contact"
               className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300"
             >
-              Contact Me
+              Contáctame
             </Link>
           </nav>
 

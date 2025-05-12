@@ -10,10 +10,10 @@ const ServicesPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-playfair font-bold text-slate-800 mb-6">
-              My Services
+              Mis Servicios
             </h1>
             <p className="text-lg text-slate-600">
-              Evidence-based therapy to help you navigate life's challenges and achieve emotional wellbeing.
+              Terapia basada en evidencia para ayudarte a navegar los desafíos de la vida y lograr bienestar emocional.
             </p>
           </div>
         </div>
@@ -32,14 +32,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Individual Therapy
+                    Terapia Individual
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    One-on-one therapy sessions tailored to your unique needs, helping you work through
-                    personal challenges, develop coping strategies, and achieve meaningful growth.
+                    Sesiones de terapia personalizadas según tus necesidades específicas, ayudándote a superar
+                    desafíos personales, desarrollar estrategias de afrontamiento y lograr un crecimiento significativo.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $150 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -52,14 +52,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Couples Counseling
+                    Terapia de Parejas
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Improve communication, resolve conflicts, and strengthen your relationship with
-                    your partner through guided sessions focused on mutual understanding and growth.
+                    Mejora la comunicación, resuelve conflictos y fortalece tu relación de
+                    pareja mediante sesiones guiadas enfocadas en el entendimiento mutuo y el crecimiento.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $175 per 60-minute session
+                    $50.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -72,14 +72,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Anxiety Management
+                    Manejo de Ansiedad
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Learn effective strategies to manage anxiety, reduce stress, and regain
-                    control of your thoughts and emotions using evidence-based techniques.
+                    Aprende estrategias efectivas para manejar la ansiedad, reducir el estrés y recuperar
+                    el control de tus pensamientos y emociones utilizando técnicas basadas en evidencia.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $150 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -92,14 +92,34 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Depression Treatment
+                    Tratamiento de Depresión
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Evidence-based approaches to help you overcome depression and rediscover
-                    joy and purpose in your life, with compassionate support throughout your journey.
+                    Enfoques basados en evidencia para ayudarte a superar la depresión y redescubrir
+                    alegría y propósito en tu vida, con apoyo compasivo durante todo tu proceso.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $150 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
+                  </p>
+                </div>
+              </div>
+
+               <div className="flex">
+                <div className="flex-shrink-0 mr-6">
+                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                    <Heart size={24} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
+                    Trastornos de la alimentación
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Terapia especializada para abordar trastornos de la alimentación, promoviendo una
+                    relación saludable con la comida y el cuerpo, y fomentando la autoaceptación.
+                  </p>
+                  <p className="text-slate-700 font-medium">
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -112,14 +132,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Trauma Recovery
+                    Recuperación de Trauma Complejo
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Specialized therapy to help you process traumatic experiences and build
-                    resilience for the future, using EMDR and other trauma-informed approaches.
+                    Terapia especializada para ayudarte a procesar experiencias traumáticas y desarrollar
+                    resiliencia para el futuro, utilizando EMDR y otros enfoques informados en trauma.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $165 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -132,14 +152,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Mindfulness Training
+                    Psicoterapia con perspectiva LGBTIQA+
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Learn mindfulness techniques to reduce stress, increase awareness, and improve
-                    your overall wellbeing through guided practices and personalized strategies.
+                    Terapia inclusiva y afirmativa para personas LGBTIQA+, abordando temas como la identidad,
+                    la aceptación y el bienestar emocional en un entorno seguro y de apoyo.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $140 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -152,14 +172,14 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Stress Management
+                    Manejo del Estrés
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Develop effective strategies to manage stress in your personal and professional
-                    life, improving your resilience and overall wellbeing.
+                    Desarrolla estrategias efectivas para manejar el estrés en tu vida personal y profesional,
+                    mejorando tu resiliencia y bienestar general.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $140 per 50-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -172,14 +192,15 @@ const ServicesPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Initial Consultation
+                    Acompañamiento Profesional
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    A 30-minute session to discuss your concerns, answer your questions, and
-                    determine if we're a good fit to work together on your mental health journey.
+                    Sesiones de terapia breves para profesionales que buscan apoyo emocional y
+                    herramientas para manejar el estrés y la carga emocional de su trabajo, así como 
+                    recomendaciones para el desarrollo profesional dentro de organizaciones.
                   </p>
                   <p className="text-slate-700 font-medium">
-                    $75 per 30-minute session
+                    $30.000 CLP por sesión de 60 minutos
                   </p>
                 </div>
               </div>
@@ -193,11 +214,11 @@ const ServicesPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-playfair font-semibold text-slate-800 mb-6">
-              What to Expect
+              Qué Esperar
             </h2>
             <p className="text-slate-600">
-              Understanding the therapy process can help ease any concerns you might have.
-              Here's what to expect when working with me.
+              Entender el proceso terapéutico puede ayudar a aliviar cualquier inquietud que puedas tener.
+              Esto es lo que puedes esperar al trabajar conmigo.
             </p>
           </div>
 
@@ -212,11 +233,11 @@ const ServicesPage: React.FC = () => {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="flex-1 md:pr-8 mb-4 md:mb-0 md:text-right">
                       <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                        Initial Consultation
+                        Consulta Inicial
                       </h3>
                       <p className="text-slate-600">
-                        We'll discuss your concerns, goals, and expectations for therapy to
-                        determine if we're a good fit.
+                        Conversaremos sobre tus inquietudes, metas y expectativas para la terapia
+                        para determinar si somos compatibles.
                       </p>
                     </div>
                     <div className="md:mx-4 z-10">
@@ -238,11 +259,11 @@ const ServicesPage: React.FC = () => {
                     </div>
                     <div className="flex-1 md:pl-8 md:text-left">
                       <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                        Assessment
+                        Evaluación
                       </h3>
                       <p className="text-slate-600">
-                        I'll gather information about your history, current situation, and
-                        specific challenges to develop a comprehensive understanding.
+                        Recopilaré información sobre tu historia, situación actual y
+                        desafíos específicos para desarrollar una comprensión integral.
                       </p>
                     </div>
                   </div>
@@ -252,11 +273,11 @@ const ServicesPage: React.FC = () => {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="flex-1 md:pr-8 mb-4 md:mb-0 md:text-right">
                       <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                        Treatment Planning
+                        Plan de Tratamiento
                       </h3>
                       <p className="text-slate-600">
-                        Together, we'll establish clear goals and develop a personalized
-                        treatment plan tailored to your specific needs.
+                        Juntos estableceremos objetivos claros y desarrollaremos un plan de
+                        tratamiento personalizado adaptado a tus necesidades específicas.
                       </p>
                     </div>
                     <div className="md:mx-4 z-10">
@@ -278,11 +299,11 @@ const ServicesPage: React.FC = () => {
                     </div>
                     <div className="flex-1 md:pl-8 md:text-left">
                       <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                        Ongoing Therapy
+                        Terapia Continua
                       </h3>
                       <p className="text-slate-600">
-                        Regular sessions focused on addressing your concerns, developing skills,
-                        and making progress toward your goals.
+                        Sesiones regulares enfocadas en abordar tus preocupaciones, desarrollar habilidades
+                        y avanzar hacia tus objetivos.
                       </p>
                     </div>
                   </div>
@@ -292,11 +313,11 @@ const ServicesPage: React.FC = () => {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="flex-1 md:pr-8 mb-4 md:mb-0 md:text-right">
                       <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                        Progress Evaluation
+                        Evaluación de Progreso
                       </h3>
                       <p className="text-slate-600">
-                        We'll regularly assess your progress, adjust our approach as needed,
-                        and celebrate the positive changes you're making.
+                        Evaluaremos regularmente tu progreso, ajustaremos nuestro enfoque según sea necesario,
+                        y celebraremos los cambios positivos que estés logrando.
                       </p>
                     </div>
                     <div className="md:mx-4 z-10">
@@ -319,16 +340,16 @@ const ServicesPage: React.FC = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-blue-50 p-8 rounded-lg">
               <h2 className="text-2xl font-playfair font-semibold text-slate-800 mb-6 text-center">
-                Insurance & Payment
+                Seguros y Pagos
               </h2>
               <p className="text-slate-600 mb-6 text-center">
-                I accept various insurance plans and payment options to make therapy accessible.
+                Puedes rendir la terapia a través de tu ISAPRE o pagar de forma privada.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="md:col-span-1">
                   <h3 className="text-lg font-medium text-slate-800 mb-3">
-                    Accepted Insurance Plans
+                    Opciones de Pago
                   </h3>
                   <ul className="space-y-2 text-slate-600">
                     <li className="flex items-center">
@@ -346,7 +367,7 @@ const ServicesPage: React.FC = () => {
                           d="M5 13l4 4L19 7"
                         ></path>
                       </svg>
-                      Blue Cross Blue Shield
+                      Tarjetas de Crédito/Débito
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -363,7 +384,7 @@ const ServicesPage: React.FC = () => {
                           d="M5 13l4 4L19 7"
                         ></path>
                       </svg>
-                      Aetna
+                      Transferencias bancarias
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -380,125 +401,11 @@ const ServicesPage: React.FC = () => {
                           d="M5 13l4 4L19 7"
                         ></path>
                       </svg>
-                      Cigna
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      United Healthcare
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      Medicare
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-medium text-slate-800 mb-3">
-                    Payment Options
-                  </h3>
-                  <ul className="space-y-2 text-slate-600">
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      Credit/Debit Cards
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      HSA/FSA
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      Sliding Scale Fees (limited availability)
-                    </li>
-                    <li className="flex items-center">
-                      <svg
-                        className="w-5 h-5 text-green-500 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        ></path>
-                      </svg>
-                      Out-of-Network Benefits
+                      Efectivo
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <p className="text-slate-600 mt-6 text-center">
-                Please contact me to verify your insurance coverage or discuss payment options.
-              </p>
             </div>
           </div>
         </div>
@@ -509,11 +416,11 @@ const ServicesPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-playfair font-bold mb-6">
-              Ready to Begin Your Journey?
+              ¿Lista/o para Comenzar tu Proceso?
             </h2>
             <p className="text-lg text-blue-100 mb-8">
-              Schedule your initial consultation today, and let's take the first step toward
-              your mental health and wellbeing.
+              Agenda tu consulta inicial hoy, y demos juntos el primer paso hacia 
+              tu salud mental y bienestar emocional.
             </p>
             <Button
               to="/contact"
@@ -521,7 +428,7 @@ const ServicesPage: React.FC = () => {
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-50"
             >
-              Get in Touch
+              Contáctame
             </Button>
           </div>
         </div>

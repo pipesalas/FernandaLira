@@ -11,15 +11,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-playfair text-xl font-semibold text-slate-800 mb-4">
-              Dr. Sarah Parker
+              Fernanda Lira
             </h3>
             <p className="text-slate-600 mb-6 max-w-md">
-              Dedicated to helping you find clarity, strength, and emotional balance
-              through evidence-based psychological approaches.
+              Dedicada a ayudarte a encontrar claridad, fortaleza y equilibrio emocional
+              a través de enfoques psicológicos basados en evidencia.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/fernanda-lira-8538a6b5/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -40,10 +42,13 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors duration-300"
-                aria-label="Twitter"
+                href="https://www.doctoralia.cl/fernanda-lira/psicologo/valdivia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 hover:bg-green-200 transition-colors duration-300"
+                aria-label="Doctoralia"
               >
+                {/* Doctoralia icon (using a stethoscope/medical cross style) */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -55,7 +60,8 @@ const Footer: React.FC = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v8M8 12h8" />
                 </svg>
               </a>
             </div>
@@ -63,31 +69,30 @@ const Footer: React.FC = () => {
 
           <div>
             <h3 className="font-playfair text-xl font-semibold text-slate-800 mb-4">
-              Contact Information
+              Información de contacto
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone size={18} className="text-blue-600 mt-1 mr-3" />
-                <span className="text-slate-600">(555) 123-4567</span>
+                <span className="text-slate-600">+569 98250120</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-blue-600 mt-1 mr-3" />
-                <span className="text-slate-600">sarah.parker@example.com</span>
+                <span className="text-slate-600">fernandailirae@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="text-blue-600 mt-1 mr-3" />
                 <span className="text-slate-600">
-                  123 Wellness Street, Suite 101
+                  Caupolicán 109
                   <br />
-                  San Francisco, CA 94107
+                  Valdivia
                 </span>
               </li>
               <li className="flex items-start">
                 <Clock size={18} className="text-blue-600 mt-1 mr-3" />
                 <div className="text-slate-600">
-                  <p>Monday - Friday: 9am - 6pm</p>
-                  <p>Saturday: 10am - 2pm</p>
-                  <p>Sunday: Closed</p>
+                  <p>Lunes - Miércoles: 10:00 - 20:00</p>
+                  <p>Martes - Jueves: 13:00 - 18:00</p>
                 </div>
               </li>
             </ul>
@@ -95,7 +100,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h3 className="font-playfair text-xl font-semibold text-slate-800 mb-4">
-              Quick Links
+              Enlaces rápidos
             </h3>
             <ul className="space-y-2">
               <li>
@@ -103,7 +108,7 @@ const Footer: React.FC = () => {
                   to="/"
                   className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
                 >
-                  Home
+                  Inicio
                 </Link>
               </li>
               <li>
@@ -111,7 +116,7 @@ const Footer: React.FC = () => {
                   to="/about"
                   className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
                 >
-                  About Me
+                  Sobre mí
                 </Link>
               </li>
               <li>
@@ -119,7 +124,7 @@ const Footer: React.FC = () => {
                   to="/services"
                   className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
                 >
-                  Services
+                  Servicios
                 </Link>
               </li>
               <li>
@@ -127,15 +132,7 @@ const Footer: React.FC = () => {
                   to="/contact"
                   className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
                 >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/privacy"
-                  className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
-                >
-                  Privacy Policy
+                  Contacto
                 </Link>
               </li>
             </ul>
@@ -144,7 +141,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-slate-200 mt-8 pt-8 text-center">
           <p className="text-slate-500 text-sm">
-            &copy; {currentYear} Dr. Sarah Parker. All rights reserved.
+            &copy; {currentYear} Fernanda Lira.
           </p>
         </div>
       </div>
