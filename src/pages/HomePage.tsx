@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Activity, Coffee, Award, Users, Book, User } from 'lucide-react';
+import { Heart, Activity, Coffee, Award, Users, Book, User, GraduationCap} from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
 import Carousel from 'react-multi-carousel';
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
                   <img
-                    src="/src/profile.png"
+                    src="https://github.com/pipesalas/FernandaLira/blob/main/src/profile.png?raw=true"
                     alt="Fernanda Lira"
                     className="w-full h-full object-cover"
                   />
@@ -114,14 +114,14 @@ const HomePage: React.FC = () => {
             </h3>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
               <div className="flex items-center">
-                <Award size={24} className="text-blue-600 mr-3" />
+                <GraduationCap size={24} className="text-blue-600 mr-3" />
                 <div className="text-left">
                   <p className="font-medium text-slate-800">Magíster en Psicología Organizacional</p>
                   <p className="text-slate-600">UAI, 2014 - 2015</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <Award size={24} className="text-blue-600 mr-3" />
+                <GraduationCap size={24} className="text-blue-600 mr-3" />
                 <div className="text-left">
                   <p className="font-medium text-slate-800">Licenciatura en Psicología</p>
                   <p className="text-slate-600">UAI, 2010 - 2014</p>
@@ -288,7 +288,7 @@ const HomePage: React.FC = () => {
               Estoy aquí para apoyarte en cada paso del camino.
             </p>
             <Button
-              to="/contact"
+              href="https://www.doctoralia.cl/fernanda-lira/psicologo/valdivia"
               variant="secondary"
               size="lg"
               className="bg-white text-blue-600 hover:bg-blue-50"
