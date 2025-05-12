@@ -70,7 +70,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-playfair font-semibold text-slate-800 mb-6">
-              Educación y Credenciales
+              Educación y Diplomados
             </h2>
             <p className="text-slate-600">
               Mi amplia educación y formación me han preparado para brindar la más alta calidad de atención.
@@ -79,20 +79,6 @@ const AboutPage: React.FC = () => {
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
-                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
-                  <Award size={32} className="text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                    Doctorado en Psicología Clínica
-                  </h3>
-                  <p className="text-slate-600 mb-1">Universidad de Stanford, 2008</p>
-                  <p className="text-slate-500 text-sm">
-                    Tesis: "La eficacia de las intervenciones basadas en mindfulness en el tratamiento de los trastornos de ansiedad"
-                  </p>
-                </div>
-              </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
                 <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
@@ -100,11 +86,11 @@ const AboutPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                    Maestría en Psicología del Counseling
+                    Magíster en Psicología Organizacional
                   </h3>
-                  <p className="text-slate-600 mb-1">Universidad de California, Berkeley, 2005</p>
+                  <p className="text-slate-600 mb-1">Universidad Adolfo Ibáñez, 2014 - 2015</p>
                   <p className="text-slate-500 text-sm">
-                    Enfoque en tratamientos basados en evidencia y técnicas terapéuticas
+                    Actividades y grupos: Certificación por competencias, Encargada de Cultura CAAPSI 2011
                   </p>
                 </div>
               </div>
@@ -117,24 +103,9 @@ const AboutPage: React.FC = () => {
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
                     Licenciatura en Psicología
                   </h3>
-                  <p className="text-slate-600 mb-1">Universidad de Yale, 2003</p>
+                  <p className="text-slate-600 mb-1">Universidad Adolfo Ibáñez, 2010 - 2014</p>
                   <p className="text-slate-500 text-sm">
-                    Graduada summa cum laude, con honores en Psicología
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
-                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
-                  <Award size={32} className="text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                    Psicóloga Clínica Licenciada
-                  </h3>
-                  <p className="text-slate-600 mb-1">Licencia del Estado de California #PSY12345</p>
-                  <p className="text-slate-500 text-sm">
-                    Licenciada para ejercer en el estado de California desde 2010
+                    Actividades y grupos: Minor en Teatro
                   </p>
                 </div>
               </div>
