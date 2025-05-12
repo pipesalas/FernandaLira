@@ -127,6 +127,14 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
+                  to="/blog"
+                  className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
                 >
