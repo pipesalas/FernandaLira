@@ -33,17 +33,17 @@ const ContactForm: React.FC = () => {
     const newErrors: Record<string, string> = {};
     
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = 'El nombre es obligatorio';
     }
     
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = 'El correo electrónico es obligatorio';
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
+      newErrors.email = 'El correo electrónico no es válido';
     }
     
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = 'El mensaje es obligatorio';
     }
     
     setErrors(newErrors);
@@ -91,10 +91,10 @@ const ContactForm: React.FC = () => {
             </svg>
           </div>
           <h3 className="text-2xl font-playfair font-semibold text-slate-800 mb-2">
-            Thank You!
+            ¡Gracias!
           </h3>
           <p className="text-slate-600 max-w-md mx-auto">
-            Your message has been received. I'll get back to you as soon as possible.
+            Tu mensaje ha sido recibido. Me pondré en contacto contigo lo antes posible.
           </p>
         </div>
       ) : (
@@ -104,7 +104,7 @@ const ContactForm: React.FC = () => {
               htmlFor="name"
               className="block text-sm font-medium text-slate-700 mb-1"
             >
-              Name <span className="text-red-500">*</span>
+              Nombre <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -115,7 +115,7 @@ const ContactForm: React.FC = () => {
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-300 outline-none transition-colors duration-300 ${
                 errors.name ? 'border-red-400' : 'border-slate-300'
               }`}
-              placeholder="Your name"
+              placeholder="Tu nombre"
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
               htmlFor="email"
               className="block text-sm font-medium text-slate-700 mb-1"
             >
-              Email <span className="text-red-500">*</span>
+              Correo electrónico <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -138,7 +138,7 @@ const ContactForm: React.FC = () => {
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-300 outline-none transition-colors duration-300 ${
                 errors.email ? 'border-red-400' : 'border-slate-300'
               }`}
-              placeholder="your.email@example.com"
+              placeholder="tu.correo@ejemplo.com"
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -150,7 +150,7 @@ const ContactForm: React.FC = () => {
               htmlFor="phone"
               className="block text-sm font-medium text-slate-700 mb-1"
             >
-              Phone (optional)
+              Teléfono (opcional)
             </label>
             <input
               type="tel"
@@ -168,7 +168,7 @@ const ContactForm: React.FC = () => {
               htmlFor="message"
               className="block text-sm font-medium text-slate-700 mb-1"
             >
-              Message <span className="text-red-500">*</span>
+              Mensaje <span className="text-red-500">*</span>
             </label>
             <textarea
               id="message"
@@ -179,7 +179,7 @@ const ContactForm: React.FC = () => {
               className={`w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-300 outline-none transition-colors duration-300 ${
                 errors.message ? 'border-red-400' : 'border-slate-300'
               }`}
-              placeholder="How can I help you?"
+              placeholder="¿En qué puedo ayudarte?"
             ></textarea>
             {errors.message && (
               <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -219,7 +219,7 @@ const ContactForm: React.FC = () => {
                   Sending...
                 </span>
               ) : (
-                'Send Message'
+                'Enviar Mensaje'
               )}
             </Button>
           </div>

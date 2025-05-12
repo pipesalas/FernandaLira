@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Activity, Coffee, Award, Users, Book, User } from 'lucide-react';
-import Button from '../components/Button';
 import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Button from '../components/Button';
 
 const HomePage: React.FC = () => {
   return (
@@ -26,7 +26,11 @@ const HomePage: React.FC = () => {
                 A lo largo de mi carrera, he trabajado con individuos y equipos, ayudándolos a superar desafíos, desarrollar habilidades y alcanzar sus objetivos personales y profesionales. Mi objetivo es proporcionar un espacio seguro y de apoyo donde puedas explorar tus pensamientos y emociones, y trabajar juntos hacia un cambio positivo.
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in-delay-2">
-                <Button to="/contact" variant="primary" size="lg">
+                <Button
+                  href="https://www.doctoralia.cl/fernanda-lira/psicologo/valdivia"
+                  variant="primary"
+                  size="lg"
+                >
                   Agenda una Consulta
                 </Button>
                 <Button to="/about" variant="outline" size="lg">
@@ -113,16 +117,14 @@ const HomePage: React.FC = () => {
                 <Award size={24} className="text-blue-600 mr-3" />
                 <div className="text-left">
                   <p className="font-medium text-slate-800">Magíster en Psicología Organizacional</p>
-                  <p className="text-slate-600">Universidad Adolfo Ibáñez, 2014 - 2015</p>
-                  <p className="text-slate-500 text-sm">Certificación por competencias, Encargada de Cultura CAAPSI 2011</p>
+                  <p className="text-slate-600">UAI, 2014 - 2015</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Award size={24} className="text-blue-600 mr-3" />
                 <div className="text-left">
                   <p className="font-medium text-slate-800">Licenciatura en Psicología</p>
-                  <p className="text-slate-600">Universidad Adolfo Ibáñez, 2010 - 2014</p>
-                  <p className="text-slate-500 text-sm">Minor en Teatro</p>
+                  <p className="text-slate-600">UAI, 2010 - 2014</p>
                 </div>
               </div>
             </div>
@@ -169,7 +171,7 @@ const HomePage: React.FC = () => {
               to="/services"
             />
             <ServiceCard
-              title="Recuperación de Trauma"
+              title="Recuperación de Trauma Complejo"
               description="Terapia especializada para ayudarte a procesar experiencias traumáticas y construir resiliencia para el futuro."
               icon={<Award size={24} />}
               to="/services"

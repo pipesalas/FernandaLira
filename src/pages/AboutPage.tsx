@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, BookOpen, Coffee, Heart } from 'lucide-react';
+import { Award, BookOpen, Coffee, Heart, GraduationCap } from 'lucide-react';
 import Button from '../components/Button';
 
 const AboutPage: React.FC = () => {
@@ -80,33 +80,95 @@ const AboutPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-8">
 
+              {/* Psicóloga */}
               <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
                 <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
-                  <Award size={32} className="text-blue-600" />
+                  <GraduationCap size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
+                    Psicóloga
+                  </h3>
+                  <p className="text-slate-600 mb-1">UAI Santiago | 2010 - 2014</p>
+                </div>
+              </div>
+
+              {/* Magíster Psicología Organizacional */}
+              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
+                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
+                  <GraduationCap size={32} className="text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
                     Magíster en Psicología Organizacional
                   </h3>
-                  <p className="text-slate-600 mb-1">Universidad Adolfo Ibáñez, 2014 - 2015</p>
-                  <p className="text-slate-500 text-sm">
-                    Actividades y grupos: Certificación por competencias, Encargada de Cultura CAAPSI 2011
-                  </p>
+                  <p className="text-slate-600 mb-1">UAI Santiago | 2015</p>
                 </div>
               </div>
 
+              {/* Riesgo Suicida: Evaluación y Manejo */}
               <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
                 <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
                   <Award size={32} className="text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                    Licenciatura en Psicología
+                    Diplomado en Riesgo Suicida: Evaluación y Manejo
                   </h3>
-                  <p className="text-slate-600 mb-1">Universidad Adolfo Ibáñez, 2010 - 2014</p>
-                  <p className="text-slate-500 text-sm">
-                    Actividades y grupos: Minor en Teatro
-                  </p>
+                  <p className="text-slate-600 mb-1">MIDAP | 2023</p>
+                </div>
+              </div>
+
+              {/* Diplomado PAC */}
+              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
+                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
+                  <Award size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
+                    Diplomado en Psicología de la Alimentación Consciente (PAC)
+                  </h3>
+                  <p className="text-slate-600 mb-1">Escuela de Salud y Consciencia | 2022</p>
+                </div>
+              </div>
+
+              {/* Taller Principios LGTB+ */}
+              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
+                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
+                  <Award size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
+                    Taller Principios LGTB+
+                  </h3>
+                  <p className="text-slate-600 mb-1">Espectro género | 2022</p>
+                </div>
+              </div>
+
+              {/* Diplomado Psicoanálisis Relacional */}
+              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
+                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
+                  <Award size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
+                    Diplomado Psicoanálisis Relacional
+                  </h3>
+                  <p className="text-slate-600 mb-1">Centro de Terapia Relacional | 2022</p>
+                </div>
+              </div>
+
+
+              {/* Certificación por Competencias MPO */}
+              <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
+                <div className="md:w-24 flex-shrink-0 flex justify-center mb-4 md:mb-0">
+                  <Award size={32} className="text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
+                    Certificación por Competencias MPO
+                  </h3>
+                  <p className="text-slate-600 mb-1">UAI Santiago | 2015</p>
                 </div>
               </div>
             </div>
