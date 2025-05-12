@@ -6,6 +6,10 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ServicesPage from './pages/ServicesPage';
+import BlogPage from './pages/BlogPage';
+import AnsiedadDiaADia from './blog/ansiedad-dia-a-dia';
+import DiversidadLGTBQI from './blog/diversidad-lgtbqi';
+import ColoresEstadosMentales from './blog/colores-estados-mentales';
 import ScrollToTop from './components/ScrollToTop';
 import './styles/animations.css';
 
@@ -21,6 +25,10 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/ansiedad-dia-a-dia" element={<AnsiedadDiaADia />} />
+            <Route path="/blog/diversidad-lgtbqi" element={<DiversidadLGTBQI />} />
+            <Route path="/blog/colores-estados-mentales" element={<ColoresEstadosMentales />} />
           </Routes>
         </main>
         <Footer />
