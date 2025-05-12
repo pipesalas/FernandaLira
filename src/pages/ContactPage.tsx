@@ -104,7 +104,7 @@ const ContactPage: React.FC = () => {
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-slate-800">Ubicación</h3>
                     <p className="text-slate-600">
-                      Caupolicán 109, Valdivia
+                      Caupolicán 128, Valdivia
                     </p>
                   </div>
                 </div>
