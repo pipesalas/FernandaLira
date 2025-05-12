@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-playfair text-xl font-semibold text-slate-800 mb-4">
-              Dr. Sarah Parker
+              Fernanda Lira
             </h3>
             <p className="text-slate-600 mb-6 max-w-md">
               Dedicated to helping you find clarity, strength, and emotional balance
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-blue-600 mt-1 mr-3" />
-                <span className="text-slate-600">sarah.parker@example.com</span>
+                <span className="text-slate-600">fernandailirae@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="text-blue-600 mt-1 mr-3" />
@@ -144,7 +144,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-slate-200 mt-8 pt-8 text-center">
           <p className="text-slate-500 text-sm">
-            &copy; {currentYear} Dr. Sarah Parker. All rights reserved.
+            &copy; {currentYear} Fernanda Lira.
           </p>
         </div>
       </div>

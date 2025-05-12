@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             to="/"
             className="text-2xl font-playfair font-bold text-slate-800 tracking-tight"
           >
-            Dr. Sarah Parker
+            Fernanda Lira
           </Link>
 
           {/* Desktop Navigation */}

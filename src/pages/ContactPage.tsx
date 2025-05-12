@@ -57,7 +57,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-slate-800">Email</h3>
-                    <p className="text-slate-600">sarah.parker@example.com</p>
+                    <p className="text-slate-600">fernandailirae@example.com</p>
                     <p className="text-sm text-slate-500 mt-1">
                       I respond to emails within 24-48 hours
                     </p>

@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-playfair font-bold text-slate-800 mb-6">
-              Sobre la Dra. Sarah Parker
+              Sobre Fernanda Lira
             </h1>
             <p className="text-lg text-slate-600">
               Psicóloga clínica dedicada a ayudarte a alcanzar el bienestar emocional.
@@ -27,7 +27,7 @@ const AboutPage: React.FC = () => {
               <div className="rounded-lg overflow-hidden shadow-md">
                 <img
                   src="https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Dra. Sarah Parker"
+                  alt="Fernanda Lira"
                   className="w-full h-auto"
                 />
               </div>
