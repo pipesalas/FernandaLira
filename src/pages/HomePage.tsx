@@ -22,6 +22,7 @@ const HomePage: React.FC = () => {
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
                 Soy Fernanda Lira, psicóloga con una sólida formación académica y más de una década de experiencia en el ámbito clínico y organizacional. Mi enfoque combina técnicas basadas en evidencia con un profundo compromiso por el bienestar de mis pacientes.
               </p>
+              <p className="text-lg text-slate-600 mb-4">Ubicada en Valdivia, Fernanda también ofrece sesiones en línea para mayor comodidad y accesibilidad.</p>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
                 A lo largo de mi carrera, he trabajado con individuos y equipos, ayudándolos a superar desafíos, desarrollar habilidades y alcanzar sus objetivos personales y profesionales. Mi objetivo es proporcionar un espacio seguro y de apoyo donde puedas explorar tus pensamientos y emociones, y trabajar juntos hacia un cambio positivo.
               </p>

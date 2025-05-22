@@ -1,7 +1,7 @@
 # Copilot Instructions
 
 ## Project Overview
-This project is a React-based website for a chilean psychologist called Fernanda Lira, built using Vite as the build tool. It includes modern tools and libraries for styling, routing, and component-based development.
+This project is a React-based website for a chilean psychologist called Fernanda Lira who lives in Valdivia, built using Vite as the build tool. It includes modern tools and libraries for styling, routing, and component-based development.
 All the content should be in Spanish, and the website should be responsive and accessible.
 The website should include the following pages:
 - Home

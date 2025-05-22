@@ -51,6 +51,7 @@ const AboutPage: React.FC = () => {
                 como la Terapia Cognitivo-Conductual (TCC), la Terapia Cognitiva Basada en Mindfulness y enfoques
                 psicodinámicos.
               </p>
+              <p className="text-lg text-slate-600 mb-4">Fernanda trabaja desde Valdivia, pero también ofrece sesiones en línea para quienes no puedan asistir presencialmente.</p>
 
               <div className="flex gap-4">
                 <Button to="/services" variant="primary">

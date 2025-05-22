@@ -30,6 +30,7 @@ const ContactPage: React.FC = () => {
               <p className="text-slate-600 mb-8">
                 Ya sea que quieras agendar una cita o tengas preguntas sobre mis servicios, estoy aquí para ayudarte. Completa el formulario y te responderé lo antes posible.
               </p>
+              <p className="text-lg text-slate-600 mb-4">Puedes contactarme para sesiones presenciales en Valdivia o en línea desde cualquier lugar.</p>
 
               <div className="space-y-6">
                 <div className="flex items-start">
