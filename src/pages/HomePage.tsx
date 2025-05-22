@@ -39,8 +39,8 @@ const HomePage: React.FC = () => {
               </div>
             </div>
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
+              <div className="relative lg:-ml-16">
+                <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
                   <img
                     src="/profile.png"
                     alt="Fernanda Lira"

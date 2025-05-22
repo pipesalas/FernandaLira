@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import emailjs from '@emailjs/browser';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -52,22 +53,34 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!validate()) return;
-    
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
-    }, 1500);
+
+    // Lee los IDs de EmailJS desde variables de entorno
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    };
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+      .then(() => {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', phone: '', message: '' });
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 5000);
+      })
+      .catch(() => {
+        setIsSubmitting(false);
+        alert('Ocurrió un error al enviar el mensaje. Intenta nuevamente.');
+      });
   };
 
   return (

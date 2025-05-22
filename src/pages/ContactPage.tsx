@@ -146,7 +146,7 @@ const ContactPage: React.FC = () => {
             <div className="rounded-lg overflow-hidden shadow-sm h-96 bg-white">
               {/* Integración de mapa real usando iframe de Google Maps */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1234567890123!2d-73.2456789012345!3d-39.81912345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sCaupolic%C3%A1n%20109%2C%20Valdivia!5e0!3m2!1ses!2scl!4v1681234567890!5m2!1ses!2scl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1234567890123!2d-73.2456789012345!3d-39.81912345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sCaupolic%C3%A1n%20128%2C%20Valdivia!5e0!3m2!1ses!2scl!4v1681234567890!5m2!1ses!2scl"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

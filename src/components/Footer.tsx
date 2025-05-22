@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={18} className="text-blue-600 mt-1 mr-3" />
                 <span className="text-slate-600">
-                  Caupolicán 109, Valdivia
+                  Caupolicán 128, Valdivia
                 </span>
               </li>
               <li className="flex items-start">
