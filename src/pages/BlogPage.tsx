@@ -3,6 +3,10 @@ import React from 'react';
 const BlogPage: React.FC = () => {
   return (
     <>
+      <head>
+        <meta name="description" content="Psicóloga en Valdivia - Explora artículos y recomendaciones sobre salud mental y bienestar emocional. Sesiones presenciales y en línea disponibles." />
+        <meta name="keywords" content="psicóloga en Valdivia, salud mental, bienestar emocional, sesiones en línea" />
+      </head>
       {/* Header Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

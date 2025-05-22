@@ -10,6 +10,10 @@ import Button from '../components/Button';
 const HomePage: React.FC = () => {
   return (
     <>
+      <head>
+        <meta name="description" content="Psicóloga en Valdivia - Bienvenido al sitio web de Fernanda Lira. Descubre cómo puedo ayudarte a alcanzar el bienestar emocional." />
+        <meta name="keywords" content="psicóloga en Valdivia, bienestar emocional, sesiones en línea, terapia psicológica" />
+      </head>
       {/* Sección Hero */}
       <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-slate-50 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center opacity-[0.04]"></div>

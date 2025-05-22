@@ -5,6 +5,10 @@ import ContactForm from '../components/ContactForm';
 const ContactPage: React.FC = () => {
   return (
     <>
+      <head>
+        <meta name="description" content="Psicóloga en Valdivia - Contáctame para agendar sesiones presenciales o en línea. Estoy aquí para ayudarte." />
+        <meta name="keywords" content="psicóloga en Valdivia, contacto, sesiones en línea, bienestar emocional" />
+      </head>
       {/* Sección de Encabezado */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -5,6 +5,10 @@ import Button from '../components/Button';
 const ServicesPage: React.FC = () => {
   return (
     <>
+      <head>
+        <meta name="description" content="Psicóloga en Valdivia - Servicios de terapia individual, de pareja, manejo de ansiedad, y más. Sesiones presenciales y en línea disponibles." />
+        <meta name="keywords" content="psicóloga en Valdivia, terapia psicológica, sesiones en línea, bienestar emocional" />
+      </head>
       {/* Header Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
