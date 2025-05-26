@@ -109,6 +109,7 @@ const Footer: React.FC = () => {
                   Inicio
                 </Link>
               </li>
+              {/*
               <li>
                 <Link
                   to="/about"
@@ -117,6 +118,7 @@ const Footer: React.FC = () => {
                   Sobre mí
                 </Link>
               </li>
+              */}
               <li>
                 <Link
                   to="/services"
@@ -125,6 +127,7 @@ const Footer: React.FC = () => {
                   Servicios
                 </Link>
               </li>
+              {/*
               <li>
                 <Link
                   to="/blog"
@@ -133,6 +136,7 @@ const Footer: React.FC = () => {
                   Blog
                 </Link>
               </li>
+              */}
               <li>
                 <Link
                   to="/contact"

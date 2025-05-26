@@ -10,203 +10,156 @@ const ServicesPage: React.FC = () => {
         <meta name="keywords" content="psicóloga en Valdivia, terapia psicológica, sesiones en línea, bienestar emocional" />
       </head>
       {/* Header Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white">
+      <section className="pt-32 pb-12 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-playfair font-bold text-slate-800 mb-6">
-              Mis Servicios
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-playfair font-bold text-slate-800 mb-4">
+              Servicios psicológicos en Valdivia y online
             </h1>
-            <p className="text-lg text-slate-600">
-              Terapia basada en evidencia para ayudarte a navegar los desafíos de la vida y lograr bienestar emocional.
+            <p className="text-lg text-slate-600 mb-2">
+              Espacio seguro y profesional para tu bienestar emocional.
             </p>
+            <Button
+              to="/contact"
+              variant="primary"
+              size="lg"
+              className="mt-4"
+            >
+              Agenda una consulta
+            </Button>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <User size={24} />
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <User size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Terapia Individual
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Sesiones de terapia personalizadas según tus necesidades específicas, ayudándote a superar
-                    desafíos personales, desarrollar estrategias de afrontamiento y lograr un crecimiento significativo.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Terapia Individual
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Sesiones personalizadas para tu bienestar emocional y desarrollo personal.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Users size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Users size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Terapia de Parejas
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Mejora la comunicación, resuelve conflictos y fortalece tu relación de
-                    pareja mediante sesiones guiadas enfocadas en el entendimiento mutuo y el crecimiento.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $50.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Terapia de Parejas
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Fortalece tu relación y comunicación en pareja.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$50.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Activity size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Activity size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Manejo de Ansiedad
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Aprende estrategias efectivas para manejar la ansiedad, reducir el estrés y recuperar
-                    el control de tus pensamientos y emociones utilizando técnicas basadas en evidencia.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Manejo de Ansiedad
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Estrategias prácticas para reducir ansiedad y recuperar el equilibrio.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Heart size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Heart size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Tratamiento de Depresión
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Enfoques basados en evidencia para ayudarte a superar la depresión y redescubrir
-                    alegría y propósito en tu vida, con apoyo compasivo durante todo tu proceso.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Tratamiento de Depresión
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Exploramos juntos cómo tus relaciones y experiencias pasadas pueden estar influyendo en tu estado de ánimo, para abrir camino a nuevas formas de estar contigo mismo/a y con los demás.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-               <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Heart size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Heart size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Trastornos de la alimentación
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Terapia especializada para abordar trastornos de la alimentación, promoviendo una
-                    relación saludable con la comida y el cuerpo, y fomentando la autoaceptación.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Trastornos de la alimentación
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Apoyo para una relación saludable con la comida y el cuerpo.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Award size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Award size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Recuperación de Trauma Complejo
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Terapia especializada para ayudarte a procesar experiencias traumáticas y desarrollar
-                    resiliencia para el futuro, utilizando EMDR y otros enfoques informados en trauma.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Recuperación de Trauma Complejo
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Explorando cómo tanto las experiencias tempranas como las vivencias traumáticas posteriores han marcado tu forma de relacionarte y sentirte. Crearemos un espacio seguro para sanar esas heridas y construir relaciones más saludables.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Book size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Book size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Psicoterapia con perspectiva LGBTIQA+
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Terapia inclusiva y afirmativa para personas LGBTIQA+, abordando temas como la identidad,
-                    la aceptación y el bienestar emocional en un entorno seguro y de apoyo.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Psicoterapia con perspectiva LGBTIQA+
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Terapia inclusiva y afirmativa en un entorno seguro.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <Coffee size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <Coffee size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Manejo del Estrés
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Desarrolla estrategias efectivas para manejar el estrés en tu vida personal y profesional,
-                    mejorando tu resiliencia y bienestar general.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Manejo del Estrés
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Herramientas para reducir el estrés y mejorar tu calidad de vida.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
 
-              <div className="flex">
-                <div className="flex-shrink-0 mr-6">
-                  <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                    <MessageSquare size={24} />
-                  </div>
+              <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                  <MessageSquare size={22} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-3">
-                    Acompañamiento Profesional
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Sesiones de terapia breves para profesionales que buscan apoyo emocional y
-                    herramientas para manejar el estrés y la carga emocional de su trabajo, así como 
-                    recomendaciones para el desarrollo profesional dentro de organizaciones.
-                  </p>
-                  <p className="text-slate-700 font-medium">
-                    $30.000 CLP por sesión de 60 minutos
-                  </p>
-                </div>
+                <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                  Acompañamiento Profesional
+                </h3>
+                <p className="text-slate-600 mb-2">
+                  Apoyo breve y herramientas para profesionales.
+                </p>
+                <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+                <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
               </div>
             </div>
           </div>

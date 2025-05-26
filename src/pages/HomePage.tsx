@@ -18,17 +18,23 @@ const HomePage: React.FC = () => {
       <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-slate-50 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center opacity-[0.04]"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div className="order-2 lg:order-1 lg:col-span-2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-slate-800 leading-tight mb-6 animate-fade-in">
                 Hola!
               </h1>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Soy Fernanda Lira, psicóloga con una sólida formación académica y más de una década de experiencia en el ámbito clínico y organizacional. Mi enfoque combina técnicas basadas en evidencia con un profundo compromiso por el bienestar de mis pacientes.
-              </p>
-              <p className="text-lg text-slate-600 mb-4">Ubicada en Valdivia, Fernanda también ofrece sesiones en línea para mayor comodidad y accesibilidad.</p>
+                Soy psicóloga, con más de diez años de experiencia acompañando a personas y parejas en procesos de cambio y crecimiento. Mi forma de trabajar combina herramientas basadas en la evidencia con una profunda confianza en la capacidad de cada persona para transformar su vida. </p>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                A lo largo de mi carrera, he trabajado con individuos y equipos, ayudándolos a superar desafíos, desarrollar habilidades y alcanzar sus objetivos personales y profesionales. Mi objetivo es proporcionar un espacio seguro y de apoyo donde puedas explorar tus pensamientos y emociones, y trabajar juntos hacia un cambio positivo.
+                A lo largo de mi carrera, he tenido la oportunidad de acompañar a muchas personas y equipos, ayudándolos a enfrentar desafíos, conectar con sus emociones y relaciones, y encontrar nuevas formas de estar en el mundo. </p>
+              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
+                Mi propósito es crear un espacio seguro, donde puedas sentirte escuchado/a, pensado/a, y acompañado/a. Un lugar para explorar lo que te preocupa, trabajar lo que te duele, y avanzar hacia una vida más plena con un enfoque afirmativo y humano.              </p>
+              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
+                Si estás considerando empezar terapia, te invito a dar ese paso.</p>
+              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
+                Aquí estoy para acompañarte ya sea un Valdivia o de manera virtual, de manera flexible y cómoda.</p>
+              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
+                Encontrémonos.
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in-delay-2">
                 <Button
@@ -43,7 +49,7 @@ const HomePage: React.FC = () => {
                 </Button>
               </div>
             </div>
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end lg:col-span-1">
               <div className="relative lg:-ml-16">
                 <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
                   <img
@@ -70,8 +76,8 @@ const HomePage: React.FC = () => {
               Mi Enfoque Terapéutico
             </h2>
             <p className="text-lg text-slate-600">
-              Creo en crear un espacio seguro y sin juicios donde puedas explorar tus pensamientos y sentimientos.
-              Mi enfoque combina técnicas basadas en evidencia con un cuidado compasivo adaptado a tus necesidades únicas.
+              Creo profundamente que las personas crecemos y nos transformamos a través de las relaciones. 
+              Por eso, mi forma de acompañarte en terapia se basa en crear un espacio de trabajo seguro y sin juicios, en donde puedas poner en palabras aquello que duele y que te preocupa, y donde también podamos juntos, descubrir tu capacidad de cambio y crecimiento.
             </p>
           </div>
           
@@ -93,10 +99,10 @@ const HomePage: React.FC = () => {
                 <Activity size={28} />
               </div>
               <h3 className="text-xl font-playfair font-semibold text-slate-800 mb-2">
-                Métodos Basados en Evidencia
+                ¿Cómo trabajo?
               </h3>
               <p className="text-slate-600">
-                Utilizo enfoques terapéuticos científicamente validados adaptados para abordar tus preocupaciones específicas.
+                Mi enfoque se inspira en el psicoanálisis relacional, reflexionando a partir en el poder transformador del vínculo terapéutico y en la capacidad que tenemos para construir cambios significativos en nuestra vida.
               </p>
             </div>
             
@@ -117,19 +123,61 @@ const HomePage: React.FC = () => {
             <h3 className="text-2xl font-playfair font-semibold text-slate-800 mb-6">
               Formación Académica
             </h3>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-              <div className="flex items-center">
-                <GraduationCap size={24} className="text-blue-600 mr-3" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
+              <div className="flex items-start">
+                <GraduationCap size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Licenciatura en Psicología</p>
+                  <p className="text-slate-600">UAI, 2010 - 2014</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <GraduationCap size={24} className="text-blue-600 mr-3 mt-1" />
                 <div className="text-left">
                   <p className="font-medium text-slate-800">Magíster en Psicología Organizacional</p>
                   <p className="text-slate-600">UAI, 2014 - 2015</p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <GraduationCap size={24} className="text-blue-600 mr-3" />
+              <div className="flex items-start">
+                <Award size={24} className="text-blue-600 mr-3 mt-1" />
                 <div className="text-left">
-                  <p className="font-medium text-slate-800">Licenciatura en Psicología</p>
-                  <p className="text-slate-600">UAI, 2010 - 2014</p>
+                  <p className="font-medium text-slate-800">Diplomado Psicología de Alimentación Consciente TCA</p>
+                  <p className="text-slate-600">Escuela de Salud y Consciencia | 2022</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Award size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Diplomado Psicoanálisis Relacional</p>
+                  <p className="text-slate-600">Centro de Terapia Relacional | 2022</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Award size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Diplomado Trauma Relacional Complejo</p>
+                  <p className="text-slate-600">Centro de Terapia Relacional | 2024</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Book size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Curso de formación Principios LGTBIQ+</p>
+                  <p className="text-slate-600">Espectro género | 2022</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Book size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Curso de formación Riesgo Suicida: Evaluación y Manejo</p>
+                  <p className="text-slate-600">MIDAP | 2023</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Book size={24} className="text-blue-600 mr-3 mt-1" />
+                <div className="text-left">
+                  <p className="font-medium text-slate-800">Formación: Trastorno Obsesivo Compulsivo en niños y adolescentes</p>
+                  <p className="text-slate-600">ADIPA | 2024</p>
                 </div>
               </div>
             </div>
@@ -142,11 +190,10 @@ const HomePage: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-slate-800 mb-6">
-              Servicios que Ofrezco
+              ¿En qué puedo acompañarte?
             </h2>
             <p className="text-lg text-slate-600">
-              Brindo una variedad de servicios psicológicos para ayudarte a enfrentar los desafíos de la vida
-              y alcanzar el bienestar emocional.
+              Mi trabajo consiste en acompañar a personas que atraviesan distintos momentos y desafíos complejos en sus vidas, algunas veces estos momentos son dolorosos, otros repletos de confusiones y dudas, otras veces nos sentimos solos e incomprendidos, y otras muchas veces … sentimos estas emociones al mismo tiempo. 
             </p>
           </div>
 

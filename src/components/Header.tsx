@@ -47,15 +47,15 @@ const Header: React.FC = () => {
             <Link to="/" className={linkClass('/')}>
               Inicio
             </Link>
-            <Link to="/about" className={linkClass('/about')}>
+            {/* <Link to="/about" className={linkClass('/about')}>
               Sobre mí
-            </Link>
+            </Link> */}
             <Link to="/services" className={linkClass('/services')}>
               Servicios
             </Link>
-            <Link to="/blog" className={linkClass('/blog')}>
+            {/* <Link to="/blog" className={linkClass('/blog')}>
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300"
@@ -87,13 +87,15 @@ const Header: React.FC = () => {
               >
                 Home
               </Link>
+              {/*
               <Link
                 to="/about"
                 className={linkClass('/about')}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Sobre mí
               </Link>
+              */}
               <Link
                 to="/services"
                 className={linkClass('/services')}
@@ -101,9 +103,11 @@ const Header: React.FC = () => {
               >
                 Services
               </Link>
+              {/*
               <Link to="/blog" className={linkClass('/blog')}>
                 Blog
               </Link>
+              */}
               <Link
                 to="/contact"
                 className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300 inline-block"
