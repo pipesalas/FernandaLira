@@ -11,8 +11,9 @@ const HomePage: React.FC = () => {
   return (
     <>
       <head>
-        <meta name="description" content="Psicóloga en Valdivia - Bienvenido al sitio web de Fernanda Lira. Descubre cómo puedo ayudarte a alcanzar el bienestar emocional." />
-        <meta name="keywords" content="psicóloga en Valdivia, bienestar emocional, sesiones en línea, terapia psicológica" />
+        <title>Psicóloga en Valdivia | Fernanda Lira</title>
+        <meta name="description" content="Psicóloga en Valdivia. Atención presencial y online. Agenda tu consulta con Fernanda Lira para bienestar emocional y terapia profesional." />
+        <meta name="keywords" content="psicóloga en Valdivia, terapia psicológica, salud mental, sesiones online, consulta psicológica, bienestar emocional" />
       </head>
       {/* Sección Hero */}
       <section className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-slate-50 py-20 md:py-32">
@@ -24,17 +25,16 @@ const HomePage: React.FC = () => {
                 Hola!
               </h1>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Soy psicóloga, con más de diez años de experiencia acompañando a personas y parejas en procesos de cambio y crecimiento. Mi forma de trabajar combina herramientas basadas en la evidencia con una profunda confianza en la capacidad de cada persona para transformar su vida. </p>
+                Soy psicóloga con más de diez años de experiencia acompañando a personas y parejas en procesos de cambio y crecimiento. Mi trabajo combina herramientas basadas en la evidencia y una profunda confianza en la capacidad de cada persona para transformar su vida.
+              </p>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                A lo largo de mi carrera, he tenido la oportunidad de acompañar a muchas personas y equipos, ayudándolos a enfrentar desafíos, conectar con sus emociones y relaciones, y encontrar nuevas formas de estar en el mundo. </p>
+                A lo largo de mi carrera, he acompañado a muchas personas y equipos a enfrentar desafíos, conectar con sus emociones y encontrar nuevas formas de estar en el mundo.
+              </p>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Mi propósito es crear un espacio seguro, donde puedas sentirte escuchado/a, pensado/a, y acompañado/a. Un lugar para explorar lo que te preocupa, trabajar lo que te duele, y avanzar hacia una vida más plena con un enfoque afirmativo y humano.              </p>
+                Mi propósito es crear un espacio seguro y sin juicios, donde puedas explorar lo que te preocupa y avanzar hacia una vida más plena con un enfoque humano y afirmativo.
+              </p>
               <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Si estás considerando empezar terapia, te invito a dar ese paso.</p>
-              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Aquí estoy para acompañarte ya sea un Valdivia o de manera virtual, de manera flexible y cómoda.</p>
-              <p className="text-lg text-slate-600 mb-8 max-w-2xl animate-fade-in-delay">
-                Encontrémonos.
+                Atiendo en Valdivia y también de manera online. Si estás considerando empezar terapia, te invito a dar el primer paso. Encontrémonos.
               </p>
               <div className="flex flex-wrap gap-4 animate-fade-in-delay-2">
                 <Button
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
                 <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white animate-fade-in">
                   <img
                     src="/profile.png"
-                    alt="Fernanda Lira"
+                    alt="Psicóloga en Valdivia Fernanda Lira, atención presencial y online"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -417,14 +417,13 @@ const HomePage: React.FC = () => {
               Dar el primer paso hacia una mejor salud mental puede ser un desafío, pero no tienes que hacerlo solo.
               Estoy aquí para apoyarte en cada paso del camino.
             </p>
-            <Button
+            <a
               href="https://www.doctoralia.cl/fernanda-lira/psicologo/valdivia"
-              variant="secondary"
-              size="lg"
-              className="bg-white text-blue-600 hover:bg-blue-50"
+              className="inline-block px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition-all text-lg"
+              aria-label="Agendar consulta con Psicóloga en Valdivia Fernanda Lira"
             >
               Agenda Tu Consulta
-            </Button>
+            </a>
           </div>
         </div>
       </section>

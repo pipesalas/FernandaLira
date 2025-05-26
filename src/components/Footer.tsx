@@ -14,8 +14,7 @@ const Footer: React.FC = () => {
               Fernanda Lira
             </h3>
             <p className="text-slate-600 mb-6 max-w-md">
-              Dedicada a ayudarte a encontrar claridad, fortaleza y equilibrio emocional
-              a través de enfoques psicológicos basados en evidencia desde Valdivia.
+              Psicóloga en Valdivia. Atención presencial y online para tu bienestar emocional. Agenda tu consulta con Fernanda Lira.
             </p>
             <div className="flex space-x-4">
               <a
@@ -74,11 +73,11 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone size={18} className="text-blue-600 mt-1 mr-3" />
-                <span className="text-slate-600">+569 98250120</span>
+                <a href="tel:+56998250120" className="text-slate-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded transition-all">+569 98250120</a>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-blue-600 mt-1 mr-3" />
-                <span className="text-slate-600">fernandailirae@gmail.com</span>
+                <a href="mailto:fernandailirae@gmail.com" className="text-slate-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded transition-all">fernandailirae@gmail.com</a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="text-blue-600 mt-1 mr-3" />

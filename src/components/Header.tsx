@@ -40,25 +40,19 @@ const Header: React.FC = () => {
             className="text-2xl font-playfair font-bold text-slate-800 tracking-tight"
           >
             Fernanda Lira
+            <span className="sr-only">Psicóloga en Valdivia</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className={linkClass('/')}>
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+            <Link to="/" className={linkClass('/')} tabIndex={0} aria-current={location.pathname === '/' ? 'page' : undefined}>
               Inicio
             </Link>
-            {/* <Link to="/about" className={linkClass('/about')}>
-              Sobre mí
-            </Link> */}
-            {/* <Link to="/services" className={linkClass('/services')}>
-              Servicios
-            </Link> */}
-            {/* <Link to="/blog" className={linkClass('/blog')}>
-              Blog
-            </Link> */}
             <Link
               to="/contact"
-              className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300"
+              className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+              tabIndex={0}
+              aria-current={location.pathname === '/contact' ? 'page' : undefined}
             >
               Contáctame
             </Link>
@@ -66,56 +60,39 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-700 focus:outline-none"
+            className="md:hidden text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
             onClick={toggleMenu}
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg">
+        <div className="md:hidden bg-white shadow-lg" id="mobile-menu">
           <div className="container mx-auto px-4 py-3">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-4" aria-label="Navegación móvil">
               <Link
                 to="/"
                 className={linkClass('/')}
                 onClick={() => setIsMenuOpen(false)}
+                tabIndex={0}
+                aria-current={location.pathname === '/' ? 'page' : undefined}
               >
-                Home
+                Inicio
               </Link>
-              {/*
-              <Link
-                to="/about"
-                className={linkClass('/about')}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Sobre mí
-              </Link>
-              */}
-              {/*
-              <Link
-                to="/services"
-                className={linkClass('/services')}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Servicios
-              </Link>
-              */}
-              {/*
-              <Link to="/blog" className={linkClass('/blog')}>
-                Blog
-              </Link>
-              */}
               <Link
                 to="/contact"
-                className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300 inline-block"
+                className="px-5 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-md transition-colors duration-300 inline-block focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
                 onClick={() => setIsMenuOpen(false)}
+                tabIndex={0}
+                aria-current={location.pathname === '/contact' ? 'page' : undefined}
               >
-                Contact Me
+                Contáctame
               </Link>
             </nav>
           </div>
