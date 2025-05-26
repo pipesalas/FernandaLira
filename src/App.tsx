@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
-import ServicesPage from './pages/ServicesPage';
 import AnsiedadDiaADia from './blog/ansiedad-dia-a-dia';
 import DiversidadLGTBQI from './blog/diversidad-lgtbqi';
 import ColoresEstadosMentales from './blog/colores-estados-mentales';
@@ -24,7 +23,6 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/services" element={<ServicesPage />} />
             <Route path="/blog/ansiedad-dia-a-dia" element={<AnsiedadDiaADia />} />
             <Route path="/blog/diversidad-lgtbqi" element={<DiversidadLGTBQI />} />
             <Route path="/blog/colores-estados-mentales" element={<ColoresEstadosMentales />} />

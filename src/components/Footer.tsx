@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             </h3>
             <p className="text-slate-600 mb-6 max-w-md">
               Dedicada a ayudarte a encontrar claridad, fortaleza y equilibrio emocional
-              a través de enfoques psicológicos basados en evidencia.
+              a través de enfoques psicológicos basados en evidencia desde Valdivia.
             </p>
             <div className="flex space-x-4">
               <a
@@ -119,6 +119,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               */}
+              {/*
               <li>
                 <Link
                   to="/services"
@@ -127,6 +128,7 @@ const Footer: React.FC = () => {
                   Servicios
                 </Link>
               </li>
+              */}
               {/*
               <li>
                 <Link

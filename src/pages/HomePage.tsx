@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Activity, Coffee, Award, Users, Book, User, GraduationCap} from 'lucide-react';
+import { Heart, Activity, Coffee, Award, Users, Book, User, GraduationCap, MessageSquare } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
 import Carousel from 'react-multi-carousel';
@@ -43,9 +43,6 @@ const HomePage: React.FC = () => {
                   size="lg"
                 >
                   Agenda una Consulta
-                </Button>
-                <Button to="/about" variant="outline" size="lg">
-                  Conoce Más Sobre Mí
                 </Button>
               </div>
             </div>
@@ -198,42 +195,123 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Terapia Individual"
-              description="Sesiones de terapia personalizadas para tus necesidades únicas, ayudándote a superar desafíos personales y crecer."
-              icon={<User size={24} />}
-              to="/services"
-            />
-            <ServiceCard
-              title="Terapia de Pareja"
-              description="Mejora la comunicación, resuelve conflictos y fortalece tu relación con tu pareja."
-              icon={<Users size={24} />}
-              to="/services"
-            />
-            <ServiceCard
-              title="Manejo de Ansiedad"
-              description="Aprende estrategias efectivas para manejar la ansiedad, reducir el estrés y recuperar el control de tus pensamientos y emociones."
-              icon={<Activity size={24} />}
-              to="/services"
-            />
-            <ServiceCard
-              title="Tratamiento de Depresión"
-              description="Enfoques basados en evidencia para ayudarte a superar la depresión y redescubrir la alegría y el propósito en tu vida."
-              icon={<Heart size={24} />}
-              to="/services"
-            />
-            <ServiceCard
-              title="Recuperación de Trauma Complejo"
-              description="Terapia especializada para ayudarte a procesar experiencias traumáticas y construir resiliencia para el futuro."
-              icon={<Award size={24} />}
-              to="/services"
-            />
-          </div>
-
-          <div className="mt-12 text-center">
-            <Button to="/services" variant="secondary" size="lg">
-              Ver Todos los Servicios
-            </Button>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <User size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Terapia Individual
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Sesiones personalizadas para tu bienestar emocional y desarrollo personal.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Users size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Terapia de Parejas
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Fortalece tu relación y comunicación en pareja.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$50.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Activity size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Manejo de Ansiedad
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Estrategias prácticas para reducir ansiedad y recuperar el equilibrio.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Heart size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Tratamiento de Depresión
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Apoyo profesional para superar la depresión y recuperar tu bienestar.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Heart size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Trastornos de la alimentación
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Apoyo para una relación saludable con la comida y el cuerpo.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Award size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Recuperación de Trauma Complejo
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Espacio seguro para sanar heridas emocionales y construir resiliencia.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Book size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Psicoterapia con perspectiva LGBTIQA+
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Terapia inclusiva y afirmativa en un entorno seguro.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <Coffee size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Manejo del Estrés
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Herramientas para reducir el estrés y mejorar tu calidad de vida.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
+            <div className="flex flex-col items-start bg-blue-50 rounded-lg p-6 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                <MessageSquare size={22} />
+              </div>
+              <h3 className="text-lg font-playfair font-semibold text-slate-800 mb-2">
+                Acompañamiento Profesional
+              </h3>
+              <p className="text-slate-600 mb-2">
+                Apoyo breve y herramientas para profesionales.
+              </p>
+              <span className="text-slate-700 font-medium mb-2">$30.000 CLP / 60 min</span>
+              <Button to="/contact" variant="secondary" size="sm">Agendar</Button>
+            </div>
           </div>
         </div>
       </section>

@@ -50,9 +50,9 @@ const Header: React.FC = () => {
             {/* <Link to="/about" className={linkClass('/about')}>
               Sobre mí
             </Link> */}
-            <Link to="/services" className={linkClass('/services')}>
+            {/* <Link to="/services" className={linkClass('/services')}>
               Servicios
-            </Link>
+            </Link> */}
             {/* <Link to="/blog" className={linkClass('/blog')}>
               Blog
             </Link> */}
@@ -96,13 +96,15 @@ const Header: React.FC = () => {
                 Sobre mí
               </Link>
               */}
+              {/*
               <Link
                 to="/services"
                 className={linkClass('/services')}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Services
+                Servicios
               </Link>
+              */}
               {/*
               <Link to="/blog" className={linkClass('/blog')}>
                 Blog
