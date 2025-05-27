@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 import ContactForm from '../components/ContactForm';
 
 const ContactPage: React.FC = () => {
@@ -70,20 +70,7 @@ const ContactPage: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                      <Phone size={20} />
-                    </div>
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-slate-800">Teléfono</h3>
-                    <p className="text-slate-600">+569 98250120</p>
-                    <p className="text-sm text-slate-500 mt-1">
-                      De preferencia usar whatsapp
-                    </p>
-                  </div>
-                </div>
+
 
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
